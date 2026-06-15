@@ -1,9 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body onload="launchPopup()">
 <script>
-  function openWindow() {
-  window.open(
-    "https://rick.andrut.org/video.mp4", 
-    "TEST", 
-    "width=400,height=400,left=100,top=100"
-  );
-}
+    function launchPopup() {
+        const width = 960;
+        const height = 640;
+        const left = (window.screen.width - width) / 2;
+        const top = (window.screen.height - height) / 2;
+            
+        const features = `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes,status=yes`;
+            
+        window.open('https://rick.andrut.org/video.mp4', 'AnnoyingYet', features);
+        window.open('https://avpxxd.github.io/test/', 'AnnoyingYet');
+    }
 </script>
+</body>
+</html>
